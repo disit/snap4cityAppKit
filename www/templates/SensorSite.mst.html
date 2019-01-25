@@ -1,0 +1,202 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+.sensore table {
+	text-align: center;
+}
+
+.header {
+	background: #000000;
+	padding-left: 10px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	color: white;
+}
+
+table#realtime {
+	width: 100%;
+	text-align: center;
+    border: none;
+}
+
+table#realtime th {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	width: 50%;
+}
+
+table#realtimeSecond {
+	width: 100%;
+	text-align: center;
+}
+
+table#realtimeSecond th {
+	background-color: #fff;
+	color: black;
+	border: 2px solid #ddd;
+	text-align: center;
+	font-weight: bold;
+	padding: .5%;
+	width: 50%;
+}
+
+#instantTime {
+	position: relative;
+	margin: 2% 0px;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #ffffff;
+	font-weight: bold;
+	color: black;
+	line-height: 2;
+}
+</style>
+
+<div id="sensore">
+    <div id="infoMenuExpandHandler" class="grippyContainer grippyContainer-horizontal" style="text-align: center;">
+        <div class="grippy grippy-horizontal"></div>
+    </div>
+	<!-- {{#Sensor}}{{#features.0}} -->
+	<div id="infoMenuHeader" class="header {{#properties}}{{currentLanguage}} {{category}}{{/properties}}" style="position: absolute;right: 0px;left: 0px;">
+        
+        <a class="pull-right"
+			onclick="InfoManager.hideInfoAboutOneMarker({{#geometry}}{{coordinates.1}}, {{coordinates.0}}{{/geometry}});"><i
+			class="glyphicon glyphicon-remove"
+			style="color: white; padding-right: 10px"></i></a>
+			<a id="expandInfoMenu" class="pull-left" onclick="InfoManager.expandInfoAboutOneMarker();"><i
+			class="glyphicon glyphicon-plus" style="color: white; padding-right: 5px"></i></a>
+			<a id="collapseInfoMenu" class="pull-left" onclick="InfoManager.collapseInfoAboutOneMarker();"><i
+			class="glyphicon glyphicon-minus" style="color: white; padding-right: 5px"></i></a>
+		<!-- {{#properties}} -->
+		{{name}}
+	</div>
+    <!-- {{/properties}}{{/features.0}}{{/Sensor}} -->
+	<div id="infoMenuInner">
+		<ul class="list-group" style="margin-bottom: 0px">
+           <span id="infoMenuInnerDetailHeader"></span>
+            <!-- {{#realtime}}{{^results}} -->
+		<li id="instantTime" style="text-align: center">
+			<h4>
+				<i id="sensorNoRealTime"><script>
+		$("#sensorNoRealTime").html(
+				Globalization.labels.roadSensor.noRealTime)
+	</script></i>
+			</h4>
+		</li>
+		<!-- {{/results}}{{/realtime}} -->
+		
+
+		<!-- {{#realtime}}{{#results}}{{#bindings}} -->
+        <li class="list-group-item" style="padding: 0px;">
+		<table id="realtime">
+			<thead>
+				<tr>
+					<th id="roadSensorAvgDistance"><script>
+		$("#roadSensorAvgDistance").html(
+				Globalization.labels.roadSensor.avgDistance)
+	</script></th>
+					<th id="roadSensorAvgTime"><script>
+		$("#roadSensorAvgTime").html(
+				Globalization.labels.roadSensor.avgTime)
+	</script></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- {{#avgDistance}} -->
+					<td>{{value}}</td>
+					<!-- {{/avgDistance}}{{#avgTime}} -->
+					<td>{{value}}</td>
+					<!-- {{/avgTime}} -->
+				</tr>
+			</tbody>
+		</table>
+
+		<table id="realtime">
+			<thead>
+				<tr>
+					<th id="roadSensorOccupancy"><script>
+		$("#roadSensorOccupancy").html(
+				Globalization.labels.roadSensor.occupancy)
+	</script></th>
+					<th id="roadSensorConcentration"><script>
+		$("#roadSensorConcentration").html(
+				Globalization.labels.roadSensor.concentration)
+	</script></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- {{#occupancy}} -->
+					<td>{{value}}</td>
+					<!-- {{/occupancy}} {{#concentration}} -->
+					<td>{{value}}</td>
+					<!-- {{/concentration}} -->
+				</tr>
+			</tbody>
+		</table>
+
+		<table id="realtimeSecond">
+			<thead>
+				<tr>
+					<th id="roadSensorVehicleFlow"><script>
+		$("#roadSensorVehicleFlow").html(
+				Globalization.labels.roadSensor.vehicleFlow)
+	</script></th>
+					<th id="roadSensorAvgSpeed"><script>
+		$("#roadSensorAvgSpeed").html(
+				Globalization.labels.roadSensor.averageSpeed)
+	</script></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- 	{{#vehicleFlow}} -->
+					<td>{{value}}</td>
+					<!-- {{/vehicleFlow}} {{#averageSpeed}} -->
+					<td>{{value}}</td>
+					<!-- {{/averageSpeed}} -->
+				</tr>
+			</tbody>
+		</table>
+
+		<table id="realtimeSecond">
+			<thead>
+				<tr>
+					<th id="roadSensorThreshold"><script>
+		$("#roadSensorThreshold").html(
+				Globalization.labels.roadSensor.thresholdPerc)
+	</script></th>
+					<th id="roadSensorSpeedPercentile"><script>
+		$("#roadSensorSpeedPercentile").html(
+				Globalization.labels.roadSensor.speedPercentile)
+	</script></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- {{#thresholdPerc}} -->
+					<td>{{value}}</td>
+					<!-- {{/thresholdPerc}} {{#speedPercentile}} -->
+					<td>{{value}}</td>
+					<!-- {{/speedPercentile}} -->
+				</tr>
+			</tbody>
+		</table>
+        </li>
+		<!-- 	{{/bindings}} {{/results}}{{/realtime}} -->
+		
+		<!-- {{#realtime}}{{#results}}{{#bindings}}{{#instantTime}} -->
+		<div id="instantTime">{{value}}</div>
+		<!-- {{/instantTime}}{{/bindings}} {{/results}}{{/realtime}} -->
+            
+           <span id="infoMenuInnerDetails"></span>
+
+        </ul>
+		
+		
+	</div>
+</div>

@@ -1,0 +1,49 @@
+<style>
+    #filterSearchText label{
+        display: inline-block;
+        margin: 2px 0px;
+        width: 50%;
+        height: 25px;
+        padding: 0px;
+    }
+
+    #textSearchMenuHeader .input-group button{
+         height: 55px;
+         font-size: 25px;
+         width: 30px;
+         padding: 0px;
+         padding-top: 8px;
+    }
+
+</style>
+
+<div id="textSearchMenuHeader"class="panel panel-default" style="position: absolute;right: 0px;left: 0px;border-radius: 0px;" onclick="$('#listPOISearched').dropdown().hide();">
+    <div class="panel-heading" style="padding: 0px;height: 55px; border: none;">
+        <a class="pull-right" onclick="TextSearcher.hide();">
+            <i class="glyphicon glyphicon-remove"
+               style="float: right; padding: 0px 10px; color: #777; line-height: 55px;"></i>
+        </a>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-default" id="buttonManualCoordinates" onclick="TextSearcher.clickOnManualButton = true; TextSearcher.setCoordinatesToManual();"> 
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                </button>
+                <button class="btn btn-primary" id="buttonGPSCoordinates" onclick="TextSearcher.setCoordinatesToGPS();"> 
+                    <i class="glyphicon glyphicon-record"></i>
+                </button>
+            </div>
+            <input id="textSearchMenuInput" type="text" class="form-control" style="font-size: 20px;height: 55px;" onkeypress="return TextSearcher.onKeyEnter(event);" onfocus="TextSearcher.inputTextOnFocus();" onkeyup="TextSearcher.searchPOIFast();">
+            <ul id="listPOISearched" class="dropdown-menu list-group" aria-labelledby="dLabel" style="width: 100%; overflow-y: auto; margin-top: -1px; min-height: 75px; display: none;">
+                <b style="position: absolute;left: 35%;top: 25px;">Nessun Risultato</b>
+            </ul>
+            <div class="input-group-btn">
+                <button id="buttonCancelText" class="btn btn-default" onclick="TextSearcher.resetInputText();">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </button>
+                <button class="btn btn-success" style="width: 40px;" onclick="TextSearcher.search();">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "noPosition": {
+    "message": "Der aktuelle Standort kann nicht gefunden werden. Wenn Sie die Positionserfassung nicht aktivieren möchten, wählen Sie den gesuchten Standort, indem Sie auf Position wählen und auf einen Punkt auf der Karte tippen, ansonsten ist ein Suchvorgang nicht möglich.",
+    "title": "Lage Nicht Gefunden",
+    "buttonName": [ "Nicht wählen", "Position wählen" ]
+  },
+  "chooseThreeSearchCenter": {
+    "message": "Wo möchten sie suchen?",
+    "title": "",
+    "buttonName": [ "GPS", "Position Manuelle", "Letzte Anfrage" ]
+  }
+}
+
+
+
+	

@@ -1,0 +1,32 @@
+div#categorySearchMenu{
+	top: 54px;
+}
+
+@media (min-width: 900px){
+#categorySearchMenu.ui-panel {
+  width: 30%;
+}
+}
+
+@media (max-width:899px)
+{
+	div#categorySearchFancyTree * {
+  	font-size: 16px;
+	}
+}
+
+a.navbar-brand:visited
+{
+	color: #777;
+}
+
+
+.ui-dialog
+{
+	background: #eee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x !important;
+}
+.navbar-brand >img
+{
+	display:inline;
+}
+

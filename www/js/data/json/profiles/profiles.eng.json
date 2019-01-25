@@ -1,0 +1,33 @@
+{
+  "profiles": [
+    {
+      "key": "citizen",
+      "label": "Citizen",
+       "icon":  "<i class=\"icon ion-ios-home\"></i>",
+      "btnClass":  "btn-danger"
+    },
+    {
+      "key": "commuter",
+      "label": "Commuter",
+       "icon": "<i class=\"icon ion-android-subway\"></i>",
+       "btnClass":  "btn-warning"
+    },
+     {
+      "key": "student",
+      "label": "Student",
+      "icon": "<i class=\"icon ion-university\"></i>",
+      "btnClass":  "btn-success"
+    },
+    {
+      "key": "tourist",
+      "label": "Tourist",
+      "icon": "<i class=\"fa fa-globe\"></i>",
+      "btnClass":  "btn-info"
+    },
+    {
+      "key": "all",
+      "label": "All Services",
+      "btnClass":  "btn-primary"
+    }
+  ]
+}

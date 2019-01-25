@@ -1,0 +1,201 @@
+{
+  "connectionError": {
+      "message": "Il n'a pas été possible de récupérer les informations requises. Essayez d'effectuer la demande à nouveau!",
+    "title": "Contrôlez La Connexion",
+    "buttonName": ""
+  },
+  "servicesCategoryNotSelected": {
+    "message": "Aucun service à rechercher n'a été sélectionné.",
+    "title": "Services Non Sélectionnés",
+    "buttonName": ""
+  },
+  "timeoutError": {
+    "message": "Il n'a pas été possible de récupérer les informations requises. Essayez d'effectuer la demande à nouveau.",
+    "title": "Contrôlez La Connexion",
+    "buttonName": ""
+  },
+"servicesServerError": {
+    "message": "Il n'a pas été possible de récupérer les informations requises. Essayez d'effectuer la demande à nouveau.",
+    "title": "Informations Non Disponibles",
+    "buttonName": ""
+  },
+  "noFullTextResults": {
+    "message": "La recherche n'a pas trouvé de services. Essayez avec une recherche différente.",
+    "title": "Aucun Service Trouvé",
+    "buttonName": ""
+  },
+  "noTextToSearch": {
+    "message": "Vous n'avez inséré aucun texte à rechercher.",
+    "title": "Aucun Texte",
+    "buttonName": ""
+  },
+  "positionWarning": {
+    "message": "Il n'est pas possible de trouver la position actuelle. La recherche de la position semble active, contrôlez si vous êtes connecté à internet pour trouver la position à travers le réseau. Enfin, essayez de redémarrer l'app.",
+    "title": "Position Non Trouvée",
+    "buttonName": ""
+  },
+  "manualPosition": {
+    "message": "Touchez un point quelconque du plan pour rechercher dans un point déterminé.",
+    "title": "Position Manuelle",
+    "buttonName": ""
+  },
+  "overMaxDistance": {
+    "message": "Il est impossible de chercher sur une zone plus grande que celle affichée.",
+    "title": "Distance Maximale Atteinte",
+    "buttonName": ""
+  },
+  "chooseGpsManualSearchCenter": {
+    "message": "Où voulez-vous chercher?",
+    "title": "",
+    "buttonName": [ "GPS", "Position Manuelle" ]
+  },
+  "chooseGpsServiceSearchCenter": {
+    "message": "Où voulez-vous chercher?",
+    "title": "",
+    "buttonName": [ "GPS", "Dernier Service" ]
+  },
+  "chooseManualServiceSearchCenter": {
+    "message": "Où voulez-vous chercher?",
+    "title": "",
+    "buttonName": [ "Position Manuelle", "Dernier Service" ]
+  },
+  "addCalendarSuccess": {
+    "message": "L'événement a été ajouté au calendrier.",
+    "title": "Inséré",
+    "buttonName": ""
+  },
+  "addCalendarError": {
+    "message": "Il n'a pas été possible d'insérer l'événement dans le calendrier.",
+    "title": "Non Inséré",
+    "buttonName": ""
+  },
+  "addFavourite": {
+    "message": "Service ajouté aux favoris",
+    "title": "Ajouté",
+    "buttonName": ""
+  },
+  "removeFavourite": {
+    "message": "Service supprimé des favoris",
+    "title": "Supprimé",
+    "buttonName": ""
+  },
+  "saveSurveyResultSuccess": {
+    "message": "Les résultats du sondage ont été envoyés",
+    "title": "Envoyés",
+    "buttonName": ""
+  },
+  "saveSurveyResultError": {
+    "message": "Il n'a pas été possible d'envoyer les résultats de l'enquête",
+    "title": "Non Envoyées",
+    "buttonName": ""
+  },
+  "navigatorSearcherStart": {
+    "message": "En frappant sur \"Commence\" passe en Navigation. La position se déplacera automatiquement et effectuera une recherche des services sélectionnés dans le menu, dans la zone indiquée dans les paramétrages.",
+    "title": "Navigation",
+    "buttonName": [ "Annule", "Commence" ]
+  },
+  "photoUpload": {
+    "sendedImages": "Images Envoyées: ",
+    "unsendedImages": "Images Non Envoyées: ",
+    "moderator":  "Seront visibles après l'approbation.",
+    "doneTitle": "Envoi Complet",
+    "problemTitle": "Envoi Incomplet",
+    "buttonName": [ "Ok", "Réessayer" ]
+  },
+  "shareFacebook": {
+    "message": "Application de Facebook non installée.",
+    "title": "Non Installée",
+    "buttonName": ""
+  },
+  "sendStarsDone": {
+    "message": "La note pour ce service a été mémorisée correctement.",
+    "title": "Note Insérée",
+    "buttonName": ""
+  },
+  "sendStarsError": {
+    "message": "Réessayer de noter le service parce que la note n'a pas été mémorisée.",
+    "title": "Note Non Insérée",
+    "buttonName": ""
+  },
+  "sendCommentDone": {
+    "message": "Le commentaire pour ce service a été mémorisé correctement. Il sera visible après l'approbation.",
+    "title": "Commentaire Inséré",
+    "buttonName": ""
+  },
+  "sendCommentError": {
+    "message": "Réessayer de commenter le service parce que le commentaire n'a pas été mémorisé.",
+    "title": "Commentaire Non Inséré",
+    "buttonName": ""
+  },
+  "webPositionDenied": {
+    "message": "Il est nécessaire d'activer les permissions de géolocalisation dans le paramètres du navigateur.",
+    "title": "Autorisation Refusée",
+    "buttonName": ""
+  },
+  "saveSettings": {
+    "message": "Voulez-vous sauvegarder?",
+    "title": "",
+    "buttonName": [ "Annuler", "Sauvegarder" ]
+  },
+   "wrongEmail": {
+    "message": "Aucun email n'a été entré",
+    "title": "",
+    "buttonName": ""
+  },
+  "wrongConfirmPassword": {
+    "message": "Les deux mots de passe sont différents",
+    "title": "",
+    "buttonName": ""
+  },
+  "emptyemail": {
+    "message": "Email non entré",
+    "title": "",
+    "buttonName": ""
+  },
+  "emptypassword": {
+    "message": "Mot de passe non entré",
+    "title": "",
+    "buttonName": ""
+  },
+  "emptyconfirmPassword": {
+    "message": "Le mot de passe doit être confirmé",
+    "title": "",
+    "buttonName": ""
+  },
+  "welcomeToApp": {
+    "message": "Bienvenue dans Km4city!!!",
+    "title": "",
+    "buttonName": ""
+  },
+  "unauthorized": {
+    "message": "Vous n'êtes pas enregistré ou avez entré de mauvais e-mails et / ou mots de passe",
+    "title": "",
+    "buttonName": ""
+  },
+  "updateApp": {
+    "message": "Vous devez mettre à jour votre application pour accéder à votre profil",
+    "title": "",
+    "buttonName": [ "Annuler", "Mettre à jour" ]
+  },
+  "updateServer": {
+    "message": "Nous mettons à jour le serveur",
+    "title": "",
+    "buttonName": ""
+  },
+  "userDuplicate": {
+    "message": "Déjà inscrit",
+    "title": "",
+    "buttonName": ""
+  },
+  "emailNotSpecified": {
+    "message": "Veuillez autoriser vos informations de email",
+    "title": "",
+    "buttonName": ""
+  },
+  "emailNotSpecifiedFB": {
+    "message": "Vous ne pouvez pas vous enregistrer si vous n'autorisez pas les informations de email",
+    "title": "",
+    "buttonName": [ "Annuler", "Autorise le email" ]
+  }
+}
+

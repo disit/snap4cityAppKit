@@ -1,0 +1,94 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com-badrit-macaddress": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "com.pylonproducts.wifiwizard": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-app-event": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-backbutton": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-ble-central": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-insomnia": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-legacy-whitelist": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "cordova-plugin-fastrde-checkgps": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    },
+    "com.darktalker.cordova.screenshot": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "org.disit.snap4cityAppKit"
+    }
+  }
+}

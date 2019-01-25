@@ -1,0 +1,13 @@
+﻿{
+  "principalMenu": {
+    "moduleParkingSearcher": "Parkplätze"
+  },
+  "parkingMenu": {
+    "title": "Parkplätz",
+    "gpsOrderText": "Näher <i class=\"glyphicon glyphicon-record\">",
+    "searchCenterOrderText": "Näher <i class=\"glyphicon glyphicon-map-marker\">",
+    "freeParkingOrderText":  "Parkplätz Vorhanden",
+    "freeLotsForecast30": "Von 30Min",
+    "freeLotsForecast60":  "Von 60Min"
+  }
+}

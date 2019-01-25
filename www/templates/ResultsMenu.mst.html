@@ -1,0 +1,55 @@
+<div id="resultsMenuHeader" class="panel panel-default" style="position: absolute;right: 0px;left: 0px;border-radius: 0px;">
+    <div id="resultsMenuExpandHandler" class="grippyContainer grippyContainer-horizontal" style="text-align: center;">
+        <div class="grippy grippy-horizontal"></div>
+    </div>
+    <div class="panel-heading" style="padding: 0px 10px;height: 52px; border: none;">
+        <a class="pull-right" onclick="CategorySearcher.hide();">
+            <i class="glyphicon glyphicon-remove"
+               style="float: right; padding-left: 8px; color: #777; line-height: 52px;"></i>
+        </a>
+        <a id="resultsMenuExpand" class="pull-left" onclick="CategorySearcher.expandResultsMenu();">
+            <i class="glyphicon glyphicon-plus" style="padding-right: 8px; color: #777; line-height: 52px;"></i>
+        </a>
+        <a id="resultsMenuCollapse" class="pull-left" onclick="CategorySearcher.collapseResultsMenu();">
+            <i class="glyphicon glyphicon-minus" style="padding-right: 8px; color: #777; line-height: 52px;"></i>
+        </a>
+        <p id="resultsMenuHeaderTitle" style="line-height: 52px;color: #333;font-weight: bold;">
+            <script>
+                $("#resultsMenuHeaderTitle").html(
+                    Globalization.labels.categorySearchMenu.results)
+            </script>
+        </p>
+
+    </div>
+</div>
+<div id="resultsMenuInner" class="commonHalfMenuInner">
+    
+    <!-- {{#features}} {{#properties}}-->
+    <div class="panel panel-default" style="margin: 0px 5px 10px 5px; color: #000; text-decoration: none;" onclick="InfoManager.showInfoAboutOneMarker('{{#properties}}{{serviceUri}}{{/properties}}',{{#geometry}}{{coordinates.1}}, {{coordinates.0}}{{/geometry}});MapManager.addSelectedServiceMarker('{{serviceType}}','{{nameEscaped}}','{{civic}}','{{busLines}}','{{agency}}','{{serviceUri}}'{{/properties}},{{#geometry}}{{coordinates.1}}, {{coordinates.0}}{{/geometry}}, '{{#properties}}{{alternativeIcon}}{{/properties}}');">
+        <div class="panel-body card-2">
+            {{#properties}}
+            {{#imageThumb}}<img id="resultsMenuImage{{identifier}}" src="{{imageThumb}}"
+                           style="margin-right: 8px; float: left; max-height: 90px; max-width: 90px" class="card-3">{{/imageThumb}}
+            <img src="{{imgsrc}}" style="padding-right: 8px; float: left">
+            {{#name}}<b style="text-align: center">{{#unescapeHtml}}{{name}}{{/unescapeHtml}}</b>{{/name}}
+            {{^name}}{{#address}}<b style="text-align: center">{{address}}</b>{{/address}}{{#civic}}<br>
+<b id="resultsMenuCivicNumber{{identifier}}">
+    <script>
+                    $("#resultsMenuCivicNumber{{identifier}}").html(Globalization.labels.textSearchMenu.civic)
+    </script>
+</b> {{civic}}{{/civic}}{{/name}}
+           
+            {{#typeLabel}}<br><i class="fa fa-arrow-right"></i> {{typeLabel}}{{/typeLabel}}
+
+            {{#busLines}}<br>
+            <i class="fa fa-bus"></i>  {{busLines}}{{/busLines}}
+            {{#distanceFromSomething}}
+<br>
+{{#distanceFromGPS}} <i class="glyphicon glyphicon-record"></i> {{distanceFromGPS}} m{{/distanceFromGPS}}
+{{#distanceFromSearchCenter}}<i class="glyphicon glyphicon-map-marker"></i> {{distanceFromSearchCenter}} m{{/distanceFromSearchCenter}}
+
+{{/distanceFromSomething}}{{/properties}}
+        </div>
+    </div>
+    <!-- {{/features}} -->
+</div>

@@ -1,0 +1,36 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+.header {
+	background: #000;
+	padding-left: 10px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 20px;
+	color: white;
+}
+</style>
+<div id="service" >
+    <div id="infoMenuExpandHandler" class="grippyContainer grippyContainer-horizontal" style="text-align: center;">
+        <div class="grippy grippy-horizontal"></div>
+    </div>
+	<!-- {{#Service}}{{#features.0}} -->
+	<div id="infoMenuHeader" class="header {{#properties}}{{currentLanguage}} {{category}}{{/properties}}" style="position: absolute;right: 0px;left: 0px;">
+        
+        <a class="pull-right"
+			onclick="InfoManager.hideInfoAboutOneMarker({{#geometry}}{{coordinates.1}}, {{coordinates.0}}{{/geometry}});"><i
+			class="glyphicon glyphicon-remove"
+			style="color: white; padding-right: 10px"></i></a>
+		<!-- {{#properties}} -->
+		<a id="expandInfoMenu" class="pull-left" onclick="InfoManager.expandInfoAboutOneMarker();"><i
+			class="glyphicon glyphicon-plus" style="color: white; padding-right: 5px"></i></a>
+			<a id="collapseInfoMenu" class="pull-left" onclick="InfoManager.collapseInfoAboutOneMarker();"><i
+			class="glyphicon glyphicon-minus" style="color: white; padding-right: 5px"></i></a>
+		<p>{{name}}</p>
+		<!-- {{/properties}} -->
+
+	</div>
+    <!-- {{/features.0}}{{/Service}} -->
+	<div id="infoMenuInner">
+        <span id="infoMenuInnerDetail"></span>
+	</div>
+</div>
